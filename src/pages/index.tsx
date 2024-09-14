@@ -7,8 +7,6 @@ import {
   Input,
   message,
   Row,
-  Select,
-  Spin,
 } from "antd";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -72,7 +70,6 @@ export default function Home() {
                 >
                   <Input placeholder="Username" size="large" />
                 </Form.Item>
-
                 {/* password */}
                 <Form.Item
                   name="password"

@@ -8,6 +8,7 @@ export default function Home() {
   const [showSpin, setShowSpin] = useState(false);
   const router = useRouter();
   const [result, setResult] = useState(null);
+  const [price,setPrice] = useState()
   const [resultCome, setResultCome] = useState(false);
   const [nextColor, setNextColor] = useState("");
   const [form] = Form.useForm();
@@ -57,6 +58,7 @@ export default function Home() {
     setResult(finalResult);
     setNextColor(nextColor);
     setResultCome(true);
+    setPrice(values?.price)
     form.resetFields();
   };
   const handleShowResult = () => {
@@ -78,7 +80,7 @@ export default function Home() {
             <Card className="home-card">
               <div className="text-center p-4">
                 <h3 className="m-0 text-white">
-                  {resultCome ? "Your Result is" : "Welcome !"}
+                  {resultCome ? `Your Result is ${price}` : "Welcome !"}
                 </h3>
               </div>
               {resultCome ? (
