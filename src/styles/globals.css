@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+
+  width: 100%;
+  height: 100%;
+}
+#__next{
+  height: 100%;
+}
+section{
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input:focus{
+  outline: none;
+}
+.ant-card{
+  background: transparent;
+}
+
+.home-card{
+  width:400px;
+}
+.ant-btn{
+  background-color: #012454;
+}
+
+.ant-input-outlined{
+  background: transparent !important;
+  color: white !important;
+}
+
+.ant-input::placeholder {
+  color: #fff; 
+}
+
+.ant-modal-content{
+  /* width: 300px !important; */
+  /* height: 300px !important; */
+}
+
+/* responsive */
+

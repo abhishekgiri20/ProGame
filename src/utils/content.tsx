@@ -1,0 +1,1 @@
+export const BASE_URL='https://master.project.henceforthsolutions.com:3000/'
