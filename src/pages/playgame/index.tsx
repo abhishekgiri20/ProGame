@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Button, Card, Col, Form, Input, message, Modal, Row } from "antd";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Icon from "@/utils/Icon";
+import Icon from "../../utils/Icon";
 
 export default function Home() {
   const [showSpin, setShowSpin] = useState(false);
@@ -54,7 +54,7 @@ export default function Home() {
     const lastDigit = getLastDigit(price);
     const sum = randomDigit + lastDigit;
     const finalResult = sumDigitsUntilSingleDigit(sum);
-    const nextColor = finalResult % 2 === 0 ? "green" : "red";
+    const nextColor = finalResult % 2 === 0 ? "red" : "green";
     setResult(finalResult);
     setNextColor(nextColor);
     setResultCome(true);
