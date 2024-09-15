@@ -78,6 +78,7 @@ export default function Home() {
         <Row>
           <Col>
             <Card className="home-card">
+              <h1 className="m-0 text-white ">Play this game after 11:00 A.M</h1>
               <div className="text-center p-4">
                 <h3 className="m-0 text-white">
                   {resultCome ? `Your Result is ${price}` : "Welcome !"}
