@@ -54,7 +54,7 @@ export default function Home() {
     const lastDigit = getLastDigit(price);
     const sum = randomDigit + lastDigit;
     const finalResult = sumDigitsUntilSingleDigit(sum);
-    const nextColor = finalResult % 2 === 0 ? "red" : "green";
+    const nextColor = finalResult % 2 === 0 ? "green" : "red";
     setResult(finalResult);
     setNextColor(nextColor);
     setResultCome(true);
@@ -121,7 +121,6 @@ export default function Home() {
                       maxLength={5}
                     />
                   </Form.Item>
-
                   <Button type="primary" block htmlType="submit" size="large">
                     Get Result
                   </Button>
