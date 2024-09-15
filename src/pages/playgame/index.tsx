@@ -54,7 +54,7 @@ export default function Home() {
     const lastDigit = getLastDigit(price);
     const sum = randomDigit + lastDigit;
     const finalResult = sumDigitsUntilSingleDigit(sum);
-    const nextColor = finalResult % 2 === 0 ? "green" : "red";
+    const nextColor = finalResult % 2 === 0 ? "red" : "green";
     setResult(finalResult);
     setNextColor(nextColor);
     setResultCome(true);
@@ -87,7 +87,7 @@ export default function Home() {
               {resultCome ? (
                 <div className="w-100 d-flex flex-column align-items-center justify-content-center">
                   {
-                    nextColor === "green" ?
+                    nextColor === "red" ?
                     <Icon.AppleIcon />: <Icon.GreenApple/>
                   }
                   <Button
